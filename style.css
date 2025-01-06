@@ -1,0 +1,504 @@
+:root {
+    --white: #f3f3f3;
+    --black: #2c2c2c;
+    --gray: #8c8c8c;
+    --blue: #2483ff;
+    --darkblue: #355784;
+    --dark: #131313;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Montserrat,sans-serif;
+    background-color: var(--dark);
+    min-height: auto;
+}
+
+
+
+/* Navbar */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: var(--blue);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: 0.4s;
+}
+
+.navbar ul a {
+    color: var(--white);
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0.4rem;
+    transition: 0.2s;
+}
+
+.navbar ul a:hover {
+    color: #355784;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar label #menu-option {
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+.navbar #menu {
+    display: none;
+}
+
+/* Main */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #131313;
+}
+
+.main::before {
+    content: '';
+    background-image: url('Image/Team.jpeg');
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+}
+
+.main-contain {
+    padding: 1.4rem 7%;
+    max-width: 58rem;
+}
+
+.main-contain .mt {
+    font-size: 3.4rem;
+    color: var(--white);
+    text-shadow: 2px 2px 3px rgba(1,1,3,0.5);
+    font-weight: 700;
+    line-height: 1.2;
+    isolation: isolate;
+}
+
+.main-contain .mc {
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--white);
+    max-width: 40rem;
+    isolation: isolate;
+}
+
+.main-contain .button {
+    display: inline-block;
+    color: var(--blue);  
+    font-weight: bold;
+    margin-top: 1rem;
+    isolation: isolate;
+}
+
+.main-contain .button:hover {
+    padding: 1rem 3rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 0.2rem;
+    text-shadow: 2px 2px 3px rgba(1,1,3,0.5);
+    transition: 0.5s;
+}
+
+/* About */
+
+.about {
+    padding: 5rem 7%;
+}
+
+.about .at {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .ai {
+    flex: 1 1 38rem;
+}
+
+.about .row .ai img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about .row .ac {
+    flex: 1 1 35rem;
+    padding: 0 2rem;
+}
+
+.about .row .ac .act {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about .row .ac .acc {
+    margin-bottom: 0.8rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    max-width: 29.6rem;
+}
+
+.about .row .ac .acc span {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.about .row .ac p {
+    color: var(--white);
+}
+
+/* Service */
+
+.service {
+    background-color: var(--white);
+    left: 0;
+    right: 0;
+    padding: 5rem 7%;
+}
+
+.service .st {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.service .row {
+    display: flex;
+}
+
+.service .row .si {
+    flex: 1 1 38rem;
+    padding: 0 1rem;
+}
+
+.service .row .si img {
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.service .row .sc p {
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    padding-left: 2rem;
+    max-width: 37rem;
+}
+
+.service .row .sc .sct {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.service .row .si .sic {
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    padding-left: 2rem;
+    display: block
+}
+
+.service .row .si .sic a {
+    color: #2483ff;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 7%;
+}
+
+.contact .cc1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.1rem;
+}
+
+.contact .cc .cct p{
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+} 
+
+.contact .cc .ioc {
+    width: 40rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: var(--black);
+    border-radius: 10px;
+    display: block;
+}
+
+.contact .cc .iom {
+    width: 40rem;
+    height: 7.9rem;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--black);
+    border-radius: 10px;
+    display: block;
+}
+
+.contact .cc .ioc:focus {
+    border: 3px solid #2483ff;
+}
+
+.contact .cc .ioc::placeholder {
+    color: #8c8c8c;
+}
+
+.contact .cc .iom:focus {
+    border: 3px solid #2483ff;
+}
+
+.contact .cc .iom::placeholder {
+    color: #8c8c8c;
+}
+
+.contact .cc button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.8rem;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    text-shadow: 2px 2px 3px rgba(1,1,3,0.5);
+    margin-left: 2.1rem;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--blue);
+    left: 0;
+    right: 0;
+    padding: 2rem 7%; 
+}
+
+.fc {
+    text-align: center;
+    color: var(--white);
+    font-weight: 500;
+}
+
+
+
+
+/* Responsive Media */
+
+
+
+/* Laptop Skala */
+@media (max-width: 1440px) {
+    html {
+        font-size: 85%;
+        right: 0;
+    }
+}
+
+/* Tablet Skala */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+        width: 768px;
+        right: 0;
+    }
+
+    .navbar label #menu-option {
+        display: initial;
+    }
+    
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--gray);
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        padding: 2rem;
+        font-weight: 600;
+    }
+    
+    .navbar ul li:hover {
+        background-color: #dbdbdb;
+        color: #355784;
+    }
+    
+    #menu:checked ~ ul {
+        display: initial;
+    }
+
+    
+    .main .main-contain .button {
+        background-color: var(--blue);
+        color: var(--white);
+        border-radius: 0.2rem;
+        text-shadow: 2px 2px 3px rgba(1,1,3,0.5);
+        transition: 0.5s;
+    }
+    
+    .main .main-contain .mt {
+        font-size: 4rem;
+    }
+    
+    .main .main-contain a {
+        padding: 1rem 3rem;
+    }
+
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+    
+    .about .row .ai img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .ac {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .about .row .ac p {
+        font-size: 1.6rem;
+    }
+
+    
+    .service {
+        right: 0;
+    }
+    
+    .service .row {
+        flex-wrap: wrap;
+    }
+
+    .service .row .si img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .service .row .sc .sct {
+        padding: 0;
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    .service .row .sc .sct {
+        font-size: 1.6rem;
+    }
+
+    .contact .cc {
+        justify-content: center;
+    }
+
+    .contact .cc .ioc {
+        width: 35rem;
+    }
+
+    .contact .cc .iom {
+        width: 35rem;
+    }
+    
+}
+
+/* Mobile Skala */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+        max-width: 450px;
+        left: 0;
+        right: 0;
+    }
+    
+    .main .main-contain .mt {
+        font-size: 3.5rem;
+    }
+
+    .contact .cc button {
+        margin-left: 1rem;
+    }
+}
+
+/* Photo by <a href="https://unsplash.com/@thoughtcatalog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Thought Catalog</a> on <a href="https://unsplash.com/photos/person-holding-ballpoint-pen-writing-on-notebook-505eectW54k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+/* Photo by <a href="https://unsplash.com/@beatriz_perez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beatriz Pérez Moya</a> on <a href="https://unsplash.com/photos/a-stack-of-thick-folders-on-a-white-surface-XN4T2PVUUgk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+/* Photo by <a href="https://unsplash.com/@homajob?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Scott Graham</a> on <a href="https://unsplash.com/photos/man-writing-on-paper-OQMZwNd3ThU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+/* photo by Giammarco on Unsplash */
